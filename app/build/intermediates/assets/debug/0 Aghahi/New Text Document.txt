@@ -1,0 +1,32 @@
+.confirmBox {
+    background-color: azure;
+    padding-bottom: 3px;
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0px 0px 0 1242px rgba(0, 0, 0, 0.62);
+    display: none;
+}
+
+button.confirmBtn {
+    width: 46%;
+    background-color: chartreuse;
+    height: 45px;
+    margin: auto 2%;
+    font-size: 17px;
+    font-family: yekan,f9,Tahoma;
+    border-style: none;
+      text-align: center;
+}
+
+.confirmBtn.confirmBtnN {
+    background-color: red;
+    float: left;
+    text-align:center;
+}
+
+.confirmMsg {
+    padding: 2%;
+    font-family: yekan,f9,Tahoma;
+}

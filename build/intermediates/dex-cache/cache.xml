@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\NezamMohandesiPrj\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\NezamMohandesiPrj\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-da5a6bd455b2c7f6ec0ff59eb4a32c5564c002c5.jar" />
+    </item>
+    <item
+        jar="E:\Android\newSDK\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7965ebdbd610e5cf9e707afeada55581bead887e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-47ca94924bddf872c3c60bb53787615ec80a2446.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\NezamMohandesiPrj\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\NezamMohandesiPrj\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-20273bcdb061d1c9517a8c402458e6d74dc3a145.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\Takhfif2020Prj\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Takhfif2020Prj\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-f9f7fef82f33ca050221ded7dda0d7949ca44d57.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\NezamMohandesiPrj\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\NezamMohandesiPrj\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-e8985573924ae6d9448ae617b24d448eb5153f4b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-01872159c7a69f483fd66b69634ac4dcd9015aac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\Takhfif2020Prj\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Takhfif2020Prj\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-7cf0ce4f7381e3b2c420405f1354fac699f0fbdc.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\Takhfif2020Prj\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Takhfif2020Prj\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-ebace03c09711fcce82ee405c9971968551f6b6b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-0bc66fd85ca2a5b0ddafa55c0fc8326c64d0d003.jar" />
+    </item>
+
+</items>

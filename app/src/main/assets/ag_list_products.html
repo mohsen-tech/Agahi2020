@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+
+<html class="chtml">
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/ag-style.css" rel="stylesheet">
+    <style type="text/css">@import url("fonts/aaa.css");</style>
+    <script type="text/javascript" src="js/ul.js"></script>
+    <script type="text/javascript" src="js/parsePersian.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+
+<body class="bodystyle">  
+
+<div class="SampleItems" style="display:none;">
+	<a class="post box"  onclick="Items_OnClick(xId)" >
+		<div class="imgWrapp" >
+			<div class="baners" style="background-image: url(img/lb/2.png);"></div>
+			<img src="img/sample.jpg"/>
+		</div>
+		<div class="postTitle fieldX">fastfoothi</div>
+		<div class="fieldX">
+			<div class="mainCOST">ghamatToman</div>
+			<div class="oldCOST"></div>
+			<div class="br"></div>
+		</div>
+		<div class="fieldX">
+			<div class="offX"> <span>shahr</span>&nbsp;mantaghe
+				<div class="sellCount expireCounter" finalDate='2015/3/16'>tovzih1</div>
+			</div>
+			<div class="br"></div>
+		</div>
+	</a>
+</div>
+
+
+<div class="top_pcats">
+    <div class="inner_top_pcats_sample"  style="display:none;" >
+        <div style="display:none;" class="acatstop" onclick="acatstop_onclick('id');"><div class="acatstop_angle_right"><i class="fa fa-angle-right"></i></div><div class="text_acatstop">مسکن</div></div>
+    </div>
+
+    <div class="inner_top_pcats">
+       
+    </div>
+</div>
+ 
+
+
+<div id="allss">
+    <div id="wrapper"> 
+        <div id="main" class="ListItems">
+		
+            
+		</div>	
+    </div>
+  
+</div>
+
+
+<div class="addProd" onclick="OpenNewAD();">
+ <div class="inner_addprod">
+ +
+ </div>
+</div>
+
+
+<div class="upbox"></div>
+
+
+
+<script>
+var QueryString=GetQueryString();
+
+var v=document.getElementById("dughui");
+
+//if(!IsEmptyDV("id")) $(".addProd").css("display","block");
+
+function OpenNewAD()
+{
+	if(!IsEmptyDV("id"))
+	    curl("http://www.agahi2020.ir/MobilePage/Mobile_Newad.aspx?usrId="+GetDV("id"));
+	else
+	{
+		curl("tk_login.html");	
+	}
+	   //$(".addProd").css("display","none");
+} 
+
+var fromrec=0;
+    $(".ListItems").empty();
+window.randomp=(~~(Math.random()*6)+1);
+GetListProductAndCats(fromrec);
+
+var startget=0;
+$(document).scroll(function(v) {
+	if ((document.body.scrollTop+document.body.clientHeight)==document.body.scrollHeight)
+	{
+		if(startget==0)
+		{
+		 	startget=1;
+		 	if(QueryString.province)
+		 	  fromrec+=200;
+		 	else
+		 	  fromrec+=10;
+		 	GetListProductAndCats(fromrec);
+		}
+	}
+});
+
+ 
+function GetListProductAndCats(fromrec)
+{  
+    QueryString=GetQueryString();
+
+	if(QueryString.search)
+    {
+        var surl=urlsite_ag+"/WService/"+decodeURIComponent(QueryString.search);
+        LoadGetJson(surl,GetListProduct);
+        return;
+    }
+    else if(QueryString.sorting)
+    {
+        LoadGetJson("http://agahi2020.com/wservice/default.aspx?Action=Prods&fromrec="+fromrec+"&maxNo=10&type=Advertising&showImage=2&price=4&sort="+window.randomp,GetListProduct);
+    }
+    else if(QueryString.price)
+    {
+        LoadGetJson("http://agahi2020.com/wservice/default.aspx?Action=Prods&fromrec="+fromrec+"&maxNo=10&type=Advertising&showImage=2&price="+QueryString.price,GetListProduct);
+    }
+    else if(QueryString.province)
+    {
+        LoadGetJson("http://agahi2020.com/wservice/default.aspx?Action=Prods&fromrec="+fromrec+"&maxNo=200&showImage=2&province="+QueryString.province,GetListProduct);
+    }
+    else if(QueryString.pid)
+    { 
+        LoadGetJson("http://agahi2020.ir/wservice/?action=CatsProds&pid="+QueryString.pid+"&showimage=2&type=Advertising&sort=6&fromrec="+fromrec+"&maxNo=60",GetListCatsProds);
+    }
+    else
+    {
+    	QueryString.price=4;
+    	LoadGetJson("http://agahi2020.com/wservice/default.aspx?Action=Prods&fromrec="+fromrec+"&maxNo=10&type=Advertising&showImage=2&price="+QueryString.price,GetListProduct);
+    }
+}
+
+function GetListCatsProds(val)
+{
+    if((val.cats.items==undefined)&&(val.prods.items==undefined))
+    {
+        $(".inner_top_pcats").append("فاقد محصول");
+        return;
+    }
+     
+    GetListProduct(val.prods);
+    if(val.cats)
+       GetListCats(val.cats)
+}
+ 
+
+
+function Items_OnClick(val)
+{
+    ChengeUrl("ag_a_product.html#pid="+val);
+    //window.JSInterface.Alert(val);
+}
+
+function GetListCats(val)
+{ 
+    var inner_top_pcats_sample = document.getElementsByClassName("inner_top_pcats_sample")[0].innerHTML.replace("display:none;","");
+    document.getElementsByClassName("inner_top_pcats")[0].innerHTML="";
+    var row_sample=inner_top_pcats_sample;
+    var rowsc="";
+	if(!val.items)return;
+
+    for(var i=0;i<val.items.length;i++)
+    {
+        var a_row=row_sample
+        .replace("a.png",val.items[i].icon)
+        .replace("مسکن",val.items[i].name)
+        .replace("ValueVersion","")
+        .replace("id",val.items[i].id); 
+        rowsc=rowsc+a_row;
+    }
+    $(".inner_top_pcats").append(rowsc);
+
+    run_GetListApp=false;
+}
+
+
+function GetListProduct(val)
+{  
+    var List_itemsSample = document.getElementsByClassName("SampleItems")[0].innerHTML;
+ 
+    var rows="";
+    var ob=val.items;
+    if(!ob)
+    {
+    	$(".ListItems").append("<span style='text-align: center; width: 100%; display: inherit;'>اطلاعاتی موجود نیست.</span>"); 
+    	return;
+    }
+//
+    for(var i=0;i<ob.length;i++){
+        var a_row=List_itemsSample
+        .replace("fastfoothi",ob[i].name)
+        .replace("xId",ob[i].id)
+        .replace("tovzih1","")
+        .replace("img/sample.jpg",ob[i].icon)
+        .replace("shahr",ob[i].city)
+        .replace("mantaghe",ob[i].province)
+        .replace("img/lb/2.png","img/lb/"+ob[i].adType+".png")
+        ;
+
+        if((ob[i].adPrice=="تماس بگیرید")||(ob[i].adPrice.indexOf("ر")>=0))
+           a_row=a_row.replace("ghamatToman",ppt(ob[i].adPrice));
+        else
+           a_row=a_row.replace("ghamatToman",ob[i].adPrice+ppt("تومان "));
+        
+        rows=rows+a_row;
+    }
+    
+    $(".ListItems").append(rows); 
+    if(ob.length<10) 
+    { 
+       startget=100;
+	}
+    else
+       startget=0;
+}
+
+function myFunction() {
+    document.getElementById('field2').value = document.getElementById('field1').value;
+    alert();
+}
+
+function testEcho(message){
+     window.JSInterface.Alert(message);
+}
+
+function acatstop_onclick(val){ 
+    window.location.assign("#pid="+val); 
+    QueryString.pid=val;
+    fromrec=0;
+    $(".inner_top_pcats").empty();
+    $(".List_items").empty();
+    $(".ListItems").empty();
+    
+    GetListProductAndCats(fromrec);
+}
+
+</script>
+<div class='item_row'>
+
+</div>
+</body>
+
+</html>

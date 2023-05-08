@@ -1,0 +1,34 @@
+<select class="LSr1input province SelcetDivInner txtfa" id="" onchange="ldMenu(this.value);">
+	<option value="">ﺍﻧﺘﺨﺎﺏ ﺍﺳﺘﺎﻥ</option>
+	<option value="1">ﺁﺫﺭﺑﺎﻳﺠﺎﻥ ﺷﺮﻗﻲ</option>
+	<option value="2">ﺁﺫﺭﺑﺎﻳﺠﺎﻥ ﻏﺮﺑﻲ</option>
+	<option value="3">ﺍﺭﺩﺑﻴﻞ</option>
+	<option value="4">ﺍﺻﻔﻬﺎﻥ</option>
+	<option value="5">ﺍﻟﺒﺮﺯ</option>
+	<option value="6">ﺍﻳﻼﻡ</option>
+	<option value="7">ﺑﻮﺷﻬﺮ</option>
+	<option value="8">ﺗﻬﺮﺍﻥ</option>
+	<option value="9">ﭼﻬﺎﺭﻣﺤﺎﻝ ﺑﺨﺘﻴﺎﺭﻱ</option>
+	<option value="10">ﺧﺮﺍﺳﺎﻥ ﺟﻨﻮﺑﻲ</option>
+	<option value="11">ﺧﺮﺍﺳﺎﻥ ﺭﺿﻮﻱ</option>
+	<option value="12">ﺧﺮﺍﺳﺎﻥ ﺷﻤﺎﻟﻲ</option>
+	<option value="13">ﺧﻮﺯﺳﺘﺎﻥ</option>
+	<option value="14">ﺯﻧﺠﺎﻥ</option>
+	<option value="15">ﺳﻤﻨﺎﻥ</option>
+	<option value="16">ﺳﻴﺴﺘﺎﻥ ﻭ ﺑﻠﻮﭼﺴﺘﺎﻥ</option>
+	<option value="17">ﻓﺎﺭﺱ</option>
+	<option value="18">ﻗﺰﻭﻳﻦ</option>
+	<option value="19">ﻗﻢ</option>
+	<option value="20">ﻛﺮﺩﺳﺘﺎﻥ</option>
+	<option value="21">ﻛﺮﻣﺎﻥ</option>
+	<option value="22">ﻛﺮﻣﺎﻧﺸﺎﻩ</option>
+	<option value="23">ﻛﻬﻜﻴﻠﻮﻳﻪ ﻭ ﺑﻮﻳﺮﺍﺣﻤﺪ</option>
+	<option value="24">ﮔﻠﺴﺘﺎﻥ</option>
+	<option value="25">ﮔﻴﻼﻥ</option>
+	<option value="26">ﻟﺮﺳﺘﺎﻥ</option>
+	<option value="27">ﻣﺎﺯﻧﺪﺭﺍﻥ</option>
+	<option value="28">ﻣﺮﻛﺰﻱ</option>
+	<option value="29">ﻫﺮﻣﺰﮔﺎﻥ</option>
+	<option value="30">ﻫﻤﺪﺍﻥ</option>
+	<option value="31">ﻳﺰﺩ</option>
+</select>

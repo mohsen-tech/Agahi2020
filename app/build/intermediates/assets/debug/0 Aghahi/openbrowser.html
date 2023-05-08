@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="js/ul.js"></script>
+    <style type="text/css">@import url("fonts/aaa.css");</style>
+</head>
+
+
+<body onscroll="tbList_onscroll()">
+<div class="SampleTB" style="display: none;">
+ <table class='tbList' id='tbList' border=0> 
+   <tr> 
+
+
+     <td rowspan='2' class='EndText'>
+      <div class='tbmenu'  style="display:none" onclick='tbList_onclick(codelink);' >ﻣﻨﺎﻃﻖ</div>
+     </td>
+     
+     <td>
+       <div>
+           <div class='tbTitle' onclick='tbOpen_onclick(codelink)'>Name App</div>
+       </div>
+     </td> 
+
+     <td rowspan='2' class='tbImagetk'>
+       <img  onclick='tbOpen_onclick(codelink)' class='tbImagetkC' src='img/bulbgrey.png' onerror="this.onerror=null;this.src='img/tk_logodf1.png';">
+     </td>
+   </tr>
+
+   <tr>
+   <td>
+     <div class='tbVersion'>ValueVersion</div>
+   </td> 
+   </tr><tr class='tbBottom'></tr> 
+  </table>
+</div>
+
+<div class="List_items">
+<!--
+    <table class='tbList' id='tbList' onclick='alert()' border=0> <tr><td rowspan='2' class='tbImage'><img class='tbImage' src='a.png'></td> <td><div><div class='tbTitle'>Name App</div></div></td> <td rowspan='2' class='EndText'><div class='tbmenu'>...</div></td></tr><tr><td><div class='tbVersion'>ValueVersion</div></td> </tr><tr class='tbBottom'></tr> </table>
+-->    
+</div>
+
+
+<script>
+//720x1280 
+var QueryString=GetQueryString();
+alert(decodeURIComponent(QueryString.url));
+if(QueryString.url)
+    OpenBrowser(decodeURIComponent(QueryString.url));
+else
+    alert("خطا");
+ 
+  
+</script>
+<div class='item_row'>
+
+</div>
+</body>
+
+</html>

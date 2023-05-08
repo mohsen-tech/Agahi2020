@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet"> 
+
+    <style type="text/css">@import url("fonts/aaa.css");</style>
+    <script type="text/javascript" src="js/ul.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="js/parsePersian.js"></script>
+    <meta charset="UTF-8"> 
+</head>
+
+
+<body onscroll="tbList_onscroll()">
+
+<div class="SampleTB" style="display: none;">
+ <table class='tbList' id='tbList' border=0> 
+   <tr> 
+
+
+     <td rowspan='2' class='EndText'>
+      <div class='tbmenu'  onclick='tbList_onclick("ccity",codelink);' >ﻣﻨﺎﻃﻖ</div>
+     </td>
+     
+     <td>
+       <div>
+           <div class='tbTitle' onclick='tbOpen_onclick("ccity",codelink)'>Name App</div>
+       </div>
+     </td> 
+
+     <td rowspan='2' class='tbImagetk'>
+       <img  onclick='tbOpen_onclick("ccity",codelink)' class='tbImagetkC' src='img/bulbgrey.png' onerror="this.onerror=null;this.src='img/tk_logodf1.png';">
+     </td>
+   </tr>
+
+   <tr>
+   <td>
+     <div class='tbVersion'>ValueVersion</div>
+   </td> 
+   </tr><tr class='tbBottom'></tr> 
+  </table>
+</div>
+
+<div class="List_items">
+
+</div>
+
+
+<script>
+//720x1280 
+var QueryString=GetQueryString();
+if(!QueryString.pid)QueryString.pid=0;
+if(QueryString.Start=="1")SetDV("bycity","");
+if(QueryString.city)
+{
+   $(".tbmenu").css({"display": "none"});
+}
+if(window.JSInterface)
+{
+    window.alert=window.JSInterface.Alert;
+}
+ 
+
+GetListApp();
+var run_GetListApp=false;
+ 
+
+function GetListApp()
+{
+  var listcity=[{id:"1",name:"ﺁﺫﺭﺑﺎﻳﺠﺎﻥ ﺷﺮﻗﻲ"}
+	,{id:"2",name:"ﺁﺫﺭﺑﺎﻳﺠﺎﻥ ﻏﺮﺑﻲ"}
+	,{id:"3",name:"ﺍﺭﺩﺑﻴﻞ"}
+	,{id:"4",name:"ﺍﺻﻔﻬﺎﻥ"}
+	,{id:"5",name:"ﺍﻟﺒﺮﺯ"}
+	,{id:"6",name:"ﺍﻳﻼﻡ"}
+	,{id:"7",name:"ﺑﻮﺷﻬﺮ"}
+	,{id:"8",name:"ﺗﻬﺮﺍﻥ"}
+	,{id:"9",name:"ﭼﻬﺎﺭﻣﺤﺎﻝ ﺑﺨﺘﻴﺎﺭﻱ"}
+	,{id:"10",name:"ﺧﺮﺍﺳﺎﻥ ﺟﻨﻮﺑﻲ"}
+	,{id:"11",name:"ﺧﺮﺍﺳﺎﻥ ﺭﺿﻮﻱ"}
+	,{id:"12",name:"ﺧﺮﺍﺳﺎﻥ ﺷﻤﺎﻟﻲ"}
+	,{id:"13",name:"ﺧﻮﺯﺳﺘﺎﻥ"}
+	,{id:"14",name:"ﺯﻧﺠﺎﻥ"}
+	,{id:"15",name:"ﺳﻤﻨﺎﻥ"}
+	,{id:"16",name:"ﺳﻴﺴﺘﺎﻥ ﻭ ﺑﻠﻮﭼﺴﺘﺎﻥ"}
+	,{id:"17",name:"ﻓﺎﺭﺱ"}
+	,{id:"18",name:"ﻗﺰﻭﻳﻦ"}
+	,{id:"19",name:"ﻗﻢ"}
+	,{id:"20",name:"ﻛﺮﺩﺳﺘﺎﻥ"}
+	,{id:"21",name:"ﻛﺮﻣﺎﻥ"}
+	,{id:"22",name:"ﻛﺮﻣﺎﻧﺸﺎﻩ"}
+	,{id:"23",name:"ﻛﻬﻜﻴﻠﻮﻳﻪ ﻭ ﺑﻮﻳﺮﺍﺣﻤﺪ"}
+	,{id:"24",name:"ﮔﻠﺴﺘﺎﻥ"}
+	,{id:"25",name:"ﮔﻴﻼﻥ"}
+	,{id:"26",name:"ﻟﺮﺳﺘﺎﻥ"}
+	,{id:"27",name:"ﻣﺎﺯﻧﺪﺭﺍﻥ"}
+	,{id:"28",name:"ﻣﺮﻛﺰﻱ"}
+	,{id:"29",name:"ﻫﺮﻣﺰﮔﺎﻥ"}
+	,{id:"30",name:"ﻫﻤﺪﺍﻥ"}
+	,{id:"31",name:"ﻳﺰﺩ"}
+];
+
+    var row_sample=$(".SampleTB").html();
+    var rows="";  
+         
+    for(var i=0;i<listcity.length;i++){
+        var a_row=row_sample
+        //.replace("a.png",jdata.items[i].icon)
+        .replace("Name App",ppt(listcity[i].name))
+        .replace("ValueVersion","")
+        .replace("codelink",listcity[i].id)
+        .replace("codelink",listcity[i].id)
+        .replace("codelink",listcity[i].id)
+        .replace("codelink",listcity[i].id)
+        .replace("ccity",listcity[i].name)
+        .replace("ccity",listcity[i].name)
+        .replace("ccity",listcity[i].name)
+        .replace("ccity",listcity[i].name); 
+        rows=rows+a_row;
+    } 
+    $(".List_items").append(rows);   
+}
+
+function tbList_onscroll()
+{
+    var sy=window.scrollY;
+    var sh=document.documentElement.clientHeight;
+    if((sy)>sh)
+    {
+        if(run_GetListApp)return;
+        run_GetListApp=true;
+        //GetListApp();
+    }
+}
+tbList_onscroll();
+
+
+function tbOpen_onclick(city,pid)
+{ 
+    ChengeUrl("ag_list_products.html#province="+pid);
+     // ChengeUrl("tk_prods.html#city="+encodeURI(city));
+}
+
+function tbList_onclick(city,pid){ 
+    ChengeUrl("ag_list_products.html#province="+pid); //+"&city="+city
+    //SetDV("bycity",city);
+    return;
+}
+
+
+ 
+
+function SendCommend(){
+  var alisa=$("#alisa").val();
+  var textCommend=$("#textCommend").val();
+  if(textCommend=="")return;
+
+  textCommend=textCommend.replace("\n","<br>").replace("\r","").replace("\"","");
+  LoadGetJson(urlsite_tk+"/wservice/?Action=Comment&relid="+QueryString.pid+"&Alias="+alisa+"&cmd="+textCommend,SuccessSendCommend);
+}
+   
+</script>
+<div class='item_row'>
+
+</div>
+</body>
+
+</html>

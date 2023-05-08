@@ -1,0 +1,5 @@
+C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\classes\debug
+C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7965ebdbd610e5cf9e707afeada55581bead887e.jar
+C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-01872159c7a69f483fd66b69634ac4dcd9015aac.jar
+C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-0bc66fd85ca2a5b0ddafa55c0fc8326c64d0d003.jar
+C:\Users\Amir\AndroidStudioProjects\Agahi2020\NavigationDrawerExample1\app\build\intermediates\pre-dexed\debug\classes-47ca94924bddf872c3c60bb53787615ec80a2446.jar

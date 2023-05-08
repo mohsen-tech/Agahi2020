@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <style type="text/css">@import url("fonts/aaa.css");</style>
+    <script type="text/javascript" src="jquery.min.js"></script>
+        <meta charset='UTF-8'>    
+</head>
+
+
+<div style="text-align: center;">  
+ 
+<div>
+    <img class="img_tb_logo" src="img\ag_logodf1.png">
+    <br>
+    <a href="#" class="BtnRegister" onclick="ChangeUrl('http://www.agahi2020.ir/MobilePage/Mobile-signup.aspx');">عضویت</a>
+    <br><br>
+    <a href="enteruserpass.html" class="BtnLogin" onclick="window.JSInterface.NewPage('enteruserpass.html');">ورود</a>
+</div>
+
+<script>
+window.onresize = function() 
+{
+   // if (window.innerHeight >= 820) { /* ... */ }
+   // if (window.innerWidth <= 1280) {  /* ... */ }
+   var hi=window.innerHeight-110-50;
+   var wm=window.innerWidth-4;
+   $(".img_tb_logo").css({"height":hi+"px","max-width":wm+"px"});
+}
+window.onresize();
+
+</script>
+<div class='item_row'>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html> 
+ 
+<head>
+    <title>Untitled</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/ag-style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">@import url("fonts/aaa.css");</style> 
+    <script type="text/javascript" src="js/ul.js"></script>
+    <script type="text/javascript" src="js/city.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="js/parsePersian.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+    <meta id='maxscale' name='viewport' content='maximum-scale=0.0'>
+    <meta charset="UTF-8">
+
+	<style>
+		body{
+		  background-color: #DEDEDE;
+		  direction: rtl;
+		  text-align: right;
+		  padding-top: 3%;
+		}
+	</style>
+    <meta id='maxscale' name='viewport' content='maximum-scale=0.0'>
+	
+</head>
+
+<body>
+
+
+<div class='SelcetDiv'>
+  <input class="ac_input LSr2input ProdKeyword SelcetDivInner txtfa" placeholder="نام آگهی" type="text" name="ProdKeyword" id="ProdKeyword" value="" autocomplete="off"> 
+</div>
+ 
+
+
+<div class='SelcetDiv'>
+  <input class="LSr2input ProdCode SelcetDivInner txtfa" placeholder="شماره آگهی" type="text" name="ProdCode" id="ProdCode">
+</div>
+ 
+
+ 
+<div class='SelcetDiv'>
+<select class="LSr1input mcat SelcetDivInner txtfa" id=""> 
+	<option value="-1">دسته مورد نظر را انتخاب نماید</option>
+	<option value="102">املاک</option>
+	<option value="103">خودرو</option>
+	<option value="105">کامپیوتر وموبایل</option>
+	<option value="106">لوازم </option>
+	<option value="107">سیر وسفر</option>
+	<option value="108">صنعت وتجارت</option>
+	<option value="174">آموزشی</option>
+	<option value="175">بازار کار</option>
+	<option value="176">خدمات</option>
+	<option value="177">گوناگون</option> 
+</select>
+</div>
+<!-- 
+<select class="LSr1input scat" id="">
+<option value="-1">لطفا انتخاب نمائید...</option><option value="214"> انواع تبلت</option><option value="433"> انواع تبلت&gt; اپل آیپد</option><option value="434"> انواع تبلت&gt; سامسونگ</option><option value="435"> انواع تبلت&gt; مارشال</option><option value="436"> انواع تبلت&gt; دیمو</option><option value="437"> انواع تبلت&gt; ایسیوس</option><option value="438"> انواع تبلت&gt; وین تاچ</option><option value="439"> انواع تبلت&gt; الکتروم</option><option value="440"> انواع تبلت&gt; ویوسونیگ</option><option value="441"> انواع تبلت&gt; اچ پی</option><option value="442"> انواع تبلت&gt; دایا</option><option value="443"> انواع تبلت&gt; کیندل</option><option value="444"> انواع تبلت&gt; آمازون</option><option value="445"> انواع تبلت&gt; ایکس تاچ</option><option value="446"> انواع تبلت&gt; ایناول</option><option value="447"> انواع تبلت&gt; فوجیتسو</option><option value="448"> انواع تبلت&gt; جت وی</option><option value="449"> انواع تبلت&gt; هیوندا</option><option value="450"> انواع تبلت&gt; هواوی</option><option value="451"> انواع تبلت&gt; آینول</option><option value="452"> انواع تبلت&gt; ام اس آی</option><option value="453"> انواع تبلت&gt; نکسوس گوگل</option><option value="454"> انواع تبلت&gt; بلک بری</option><option value="455"> انواع تبلت&gt; سونی</option><option value="456"> انواع تبلت&gt; ایسر</option><option value="457"> انواع تبلت&gt; جی ایکس</option><option value="458"> انواع تبلت&gt; پیر کاردین</option><option value="1721"> انواع تبلت&gt; لنوو</option><option value="459"> انواع تبلت&gt; کیوب</option><option value="460"> انواع تبلت&gt; ماکروسافت</option><option value="461"> انواع تبلت&gt; اسمارت تاچ</option><option value="462"> انواع تبلت&gt; نگسیس</option><option value="463"> انواع تبلت&gt; دلسون</option><option value="464"> انواع تبلت&gt; دل</option><option value="1722"> انواع تبلت&gt; گوناگون</option><option value="215"> لپ تاپ ونوت بوک</option><option value="465"> لپ تاپ ونوت بوک&gt; اپل</option><option value="466"> لپ تاپ ونوت بوک&gt; ایسوس</option><option value="467"> لپ تاپ ونوت بوک&gt; سونی</option><option value="468"> لپ تاپ ونوت بوک&gt; اچ پی</option><option value="469"> لپ تاپ ونوت بوک&gt; سامسونگ</option><option value="470"> لپ تاپ ونوت بوک&gt; لنوو</option><option value="471"> لپ تاپ ونوت بوک&gt; ایسر</option><option value="472"> لپ تاپ ونوت بوک&gt; کامیک</option><option value="473"> لپ تاپ ونوت بوک&gt; دل</option><option value="474"> لپ تاپ ونوت بوک&gt; فوجیتسو</option><option value="475"> لپ تاپ ونوت بوک&gt; گیت وی</option><option value="476"> لپ تاپ ونوت بوک&gt; توشیبا</option><option value="477"> لپ تاپ ونوت بوک&gt; ام اس آی</option><option value="478"> لپ تاپ ونوت بوک&gt; ال جی</option><option value="479"> لپ تاپ ونوت بوک&gt; گیگابایت</option><option value="480"> لپ تاپ ونوت بوک&gt; گوناگون</option><option value="216"> کامپیوتر وقطعات آن </option><option value="481"> کامپیوتر وقطعات آن &gt; سیستم کامل </option><option value="482"> کامپیوتر وقطعات آن &gt; کیس کامپیوتر</option><option value="483"> کامپیوتر وقطعات آن &gt; مادربرد</option><option value="484"> کامپیوتر وقطعات آن &gt; برد حافظه (رم )</option><option value="485"> کامپیوتر وقطعات آن &gt; پردازنده</option><option value="486"> کامپیوتر وقطعات آن &gt; هارددیسک</option><option value="487"> کامپیوتر وقطعات آن &gt; کارت گرافیک</option><option value="488"> کامپیوتر وقطعات آن &gt; کارت صدا</option><option value="489"> کامپیوتر وقطعات آن &gt; درایوها</option><option value="490"> کامپیوتر وقطعات آن &gt; پاور</option><option value="491"> کامپیوتر وقطعات آن &gt; خنک کننده ها (فن -هیت سینگ)</option><option value="492"> کامپیوتر وقطعات آن &gt; کارت tvکپچر</option><option value="493"> کامپیوتر وقطعات آن &gt; فکس مودم</option><option value="494"> کامپیوتر وقطعات آن &gt; کارت کنترلر</option><option value="495"> کامپیوتر وقطعات آن &gt; فلاپی درایو</option><option value="496"> کامپیوتر وقطعات آن &gt; گوناگون</option><option value="217"> لوازم کامپیوتر</option><option value="497"> لوازم کامپیوتر&gt; مانیتورهای LCDوLED</option><option value="498"> لوازم کامپیوتر&gt; کیبورد</option><option value="499"> لوازم کامپیوتر&gt; پرینتر</option><option value="500"> لوازم کامپیوتر&gt; اسکنر</option><option value="501"> لوازم کامپیوتر&gt; فتوکپی</option><option value="502"> لوازم کامپیوتر&gt; هارد اکسترنال</option><option value="503"> لوازم کامپیوتر&gt; فلش</option><option value="504"> لوازم کامپیوتر&gt; وب کم</option><option value="505"> لوازم کامپیوتر&gt; موس وموس پد</option><option value="506"> لوازم کامپیوتر&gt; سیم وکابل</option><option value="507"> لوازم کامپیوتر&gt; اسپیکر</option><option value="508"> لوازم کامپیوتر&gt; هدست وهدفون ومیکروفن</option><option value="509"> لوازم کامپیوتر&gt; هاب usb</option><option value="510"> لوازم کامپیوتر&gt; رم ریدر</option><option value="511"> لوازم کامپیوتر&gt; بلوتوث</option><option value="512"> لوازم کامپیوتر&gt; مانیتور</option><option value="513"> لوازم کامپیوتر&gt; دسته وفرمان بازی</option><option value="514"> لوازم کامپیوتر&gt; مودم همراه</option><option value="515"> لوازم کامپیوتر&gt; ریموت کنترل</option><option value="516"> لوازم کامپیوتر&gt; کی وی ام</option><option value="517"> لوازم کامپیوتر&gt; کارت های تبدیل ومبدل ها</option><option value="518"> لوازم کامپیوتر&gt; قلم وصفحه دیجیتال</option><option value="519"> لوازم کامپیوتر&gt; پلاتر</option><option value="520"> لوازم کامپیوتر&gt; کارت دیباگر</option><option value="521"> لوازم کامپیوتر&gt; تستر وپروگرام</option><option value="522"> لوازم کامپیوتر&gt; بارکد</option><option value="523"> لوازم کامپیوتر&gt; گوناگون</option><option value="218"> قطعات لپ تاپ</option><option value="537"> قطعات لپ تاپ&gt; برد اصلی</option><option value="538"> قطعات لپ تاپ&gt; ال سی دی وال ای دی LCD..LED</option><option value="539"> قطعات لپ تاپ&gt; برد حافظه (رم)</option><option value="540"> قطعات لپ تاپ&gt; پردازنده</option><option value="541"> قطعات لپ تاپ&gt; هارد دیسک</option><option value="542"> قطعات لپ تاپ&gt; درایوها</option><option value="543"> قطعات لپ تاپ&gt; های ولتاژ</option><option value="544"> قطعات لپ تاپ&gt; کارت های وایرلس</option><option value="545"> قطعات لپ تاپ&gt; کیبرد</option><option value="546"> قطعات لپ تاپ&gt; خنک کننده (فن) داخل لب تاپ</option><option value="547"> قطعات لپ تاپ&gt; تاچ پد</option><option value="548"> قطعات لپ تاپ&gt; لولا</option><option value="549"> قطعات لپ تاپ&gt; قاب ال سی دی</option><option value="550"> قطعات لپ تاپ&gt; باطری برد لب تاپ (ساعتی)</option><option value="551"> قطعات لپ تاپ&gt; گوناگون</option><option value="219"> تجهیزات شبکه</option><option value="552"> تجهیزات شبکه&gt; روتر وایرلس</option><option value="553"> تجهیزات شبکه&gt; روتر (غیر وایرلس)</option><option value="554"> تجهیزات شبکه&gt; کارت شبکه</option><option value="555"> تجهیزات شبکه&gt; مودم ال دی اس ال</option><option value="556"> تجهیزات شبکه&gt; مودم وایمکس</option><option value="557"> تجهیزات شبکه&gt; ترمینال سوییچ شبکه</option><option value="558"> تجهیزات شبکه&gt; پرینتر سرور</option><option value="559"> تجهیزات شبکه&gt; ابزار تست شبکه</option><option value="560"> تجهیزات شبکه&gt; آچار شبکه</option><option value="561"> تجهیزات شبکه&gt; هارد شبکه</option><option value="562"> تجهیزات شبکه&gt; نویزگیر</option><option value="563"> تجهیزات شبکه&gt; آداپتور</option><option value="564"> تجهیزات شبکه&gt; تجهیزات شبکه</option><option value="565"> تجهیزات شبکه&gt; گوناگون</option><option value="220"> سرور وقطعات آن</option><option value="566"> سرور وقطعات آن&gt; سیستم های سرور</option><option value="567"> سرور وقطعات آن&gt; رک وشاسی سرور</option><option value="568"> سرور وقطعات آن&gt; گوناگون</option><option value="221"> دستگاه یوپی اس</option><option value="222"> سیستم های اتوماسیون اداری</option><option value="569"> سیستم های اتوماسیون اداری&gt; سیستم های حضور وغیاب</option><option value="570"> سیستم های اتوماسیون اداری&gt; سیستم های کنترل تردد</option><option value="571"> سیستم های اتوماسیون اداری&gt; سیستم های صدور ژتون</option><option value="572"> سیستم های اتوماسیون اداری&gt; سیستم های گشت ونگهبانی</option><option value="573"> سیستم های اتوماسیون اداری&gt; سنسور اثر انگشت</option><option value="574"> سیستم های اتوماسیون اداری&gt; گوناگون</option><option value="223"> لوازم مصرفی کامپیوتر</option><option value="575"> لوازم مصرفی کامپیوتر&gt; سی دی</option><option value="576"> لوازم مصرفی کامپیوتر&gt; دی وی دی</option><option value="577"> لوازم مصرفی کامپیوتر&gt; جوهر (کارتریج) پرینتر</option><option value="578"> لوازم مصرفی کامپیوتر&gt; کاغذ پرینتر</option><option value="579"> لوازم مصرفی کامپیوتر&gt; کیف سی دی</option><option value="580"> لوازم مصرفی کامپیوتر&gt; یلوری</option><option value="581"> لوازم مصرفی کامپیوتر&gt; اسپری تمیز کننده کامپیوتر</option><option value="582"> لوازم مصرفی کامپیوتر&gt; مانیتور ولوازم الکتریکی</option><option value="583"> لوازم مصرفی کامپیوتر&gt; قاب سی دی</option><option value="584"> لوازم مصرفی کامپیوتر&gt; قاب دی وی دی</option><option value="585"> لوازم مصرفی کامپیوتر&gt; فلاپی (دیسکت)</option><option value="586"> لوازم مصرفی کامپیوتر&gt; گوناگون</option><option value="224"> کتاب خوان</option><option value="225"> گیفت کارت</option><option value="524"> لوازم جانبی لپ تاپ وتبلت</option><option value="525"> لوازم جانبی لپ تاپ وتبلت&gt; آداپتوروشارژر لپ تاپ</option><option value="526"> لوازم جانبی لپ تاپ وتبلت&gt; آداپتوروشارژر تبلت</option><option value="527"> لوازم جانبی لپ تاپ وتبلت&gt; کیف وکاور لپ تاپ</option><option value="528"> لوازم جانبی لپ تاپ وتبلت&gt; محافظ تبلت ولپ تاپ</option><option value="529"> لوازم جانبی لپ تاپ وتبلت&gt; کیف وکاور وکیبرد لپ تاپ</option><option value="530"> لوازم جانبی لپ تاپ وتبلت&gt; باتری لپ تاپ</option><option value="531"> لوازم جانبی لپ تاپ وتبلت&gt; خنک کننده اکسترنال</option><option value="532"> لوازم جانبی لپ تاپ وتبلت&gt; موس</option><option value="533"> لوازم جانبی لپ تاپ وتبلت&gt; قفل لب تاپ</option><option value="534"> لوازم جانبی لپ تاپ وتبلت&gt; برچسب لب تاپ</option><option value="535"> لوازم جانبی لپ تاپ وتبلت&gt; مودم اکسترنال</option><option value="536"> لوازم جانبی لپ تاپ وتبلت&gt; گوناگون</option></select>
+ -->
+
+<div class='SelcetDiv'>
+<select class="LSr1input province SelcetDivInner txtfa" id="" onchange="ldMenu(this.value);">
+	<option value="">انتخاب استان</option>
+	<option value="1">آذربايجان شرقي</option>
+	<option value="2">آذربايجان غربي</option>
+	<option value="3">اردبيل</option>
+	<option value="4">اصفهان</option>
+	<option value="5">البرز</option>
+	<option value="6">ايلام</option>
+	<option value="7">بوشهر</option>
+	<option value="8">تهران</option>
+	<option value="9">چهارمحال بختياري</option>
+	<option value="10">خراسان جنوبي</option>
+	<option value="11">خراسان رضوي</option>
+	<option value="12">خراسان شمالي</option>
+	<option value="13">خوزستان</option>
+	<option value="14">زنجان</option>
+	<option value="15">سمنان</option>
+	<option value="16">سيستان و بلوچستان</option>
+	<option value="17">فارس</option>
+	<option value="18">قزوين</option>
+	<option value="19">قم</option>
+	<option value="20">كردستان</option>
+	<option value="21">كرمان</option>
+	<option value="22">كرمانشاه</option>
+	<option value="23">كهكيلويه و بويراحمد</option>
+	<option value="24">گلستان</option>
+	<option value="25">گيلان</option>
+	<option value="26">لرستان</option>
+	<option value="27">مازندران</option>
+	<option value="28">مركزي</option>
+	<option value="29">هرمزگان</option>
+	<option value="30">همدان</option>
+	<option value="31">يزد</option>
+</select>
+</div>
+
+<div class='SelcetDiv'>
+	<select class="LSr1input City SelcetDivInner txtfa" id="City" name="City" >
+	 <option value="">شهرستان</option>
+	</select>
+</div>
+
+
+ 
+ <div class="" style="width: 96%; padding-top: 9px;">
+    <div style="margin:0 auto;width: 90px;"><input class="txtfa" onclick="Btn_Search()" style="width: 90px;padding: 10px;background-color:#005fb5;color: white;font-size: 16px;" type="button" value="جست و جو"></input></div>
+ </div>
+
+<div class="outtest">
+
+</div>
+
+
+
+
+
+<script>
+	//http://bazar2020.ir/wservice/default.aspx?Action=Prods&showimage=2&province=11&city=%D9%85%D8%B4%D9%87%D8%AF&maxno=-1&fromrec=-1&cat=152&scat=214&sort=1
+
+ 
+
+
+	function Btn_Search()
+ 	{
+ 
+// 		return;
+		var ProdKeyword=$(".ProdKeyword").val();
+		var ProdCode=$(".ProdCode").val();
+		var mcat=$(".mcat").val();
+// 		var scat=$(".scat").val();
+		var province=$(".province").val();
+		var City=$(".City").val();
+		var SortStr=$(".SortStr").val();
+ 
+
+		var qu="?Action=Prods&showimage=2";
+		if(TrueVal(ProdKeyword)) qu+="&keyword="+ProdKeyword; 
+		if(TrueVal(ProdCode)) qu+="&ProdCode="+ProdCode;
+		if(TrueVal(mcat)) qu+="&cat="+mcat;
+		//if(TrueVal(scat)) qu+="&scat="+scat;
+		if(TrueVal(province)) qu+="&province="+province;
+		if(TrueVal(City)) qu+="&city="+City;
+// 		if(TrueVal(SortStr)) qu+="&sort="+SortStr; 
+
+		ChengeUrl("ag_list_products.html#search="+encodeURIComponent(qu));
+	}
+
+
+	function TrueVal(val){
+		var v=true;
+		if(val=="")v=false;
+		if(val==-1)v=false; 
+		return v;
+	}
+
+ 
+
+
+</script>
+
+
+<script type="text/javascript">InitFa();</script>
+</body>
+
+</html>

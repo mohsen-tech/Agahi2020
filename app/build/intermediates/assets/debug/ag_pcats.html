@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="js/ul.js"></script>
+    <style type="text/css">@import url("fonts/aaa.css");</style>
+</head>
+
+
+<body onscroll="tbList_onscroll()">
+<div class="SampleTB" style="display: none;">
+ <table class='tbList' id='tbList' border=0> 
+   <tr> 
+
+
+     <td rowspan='2' class='EndText'>
+      <div class='tbmenu'  style="display:none" onclick='tbList_onclick(codelink);' >ﻣﻨﺎﻃﻖ</div>
+     </td>
+     
+     <td>
+       <div>
+           <div class='tbTitle' onclick='tbOpen_onclick(codelink)'>Name App</div>
+       </div>
+     </td> 
+
+     <td rowspan='2' class='tbImagetk'>
+       <img  onclick='tbOpen_onclick(codelink)' class='tbImagetkC' src='img/bulbgrey.png' onerror="this.onerror=null;this.src='img/tk_logodf1.png';">
+     </td>
+   </tr>
+
+   <tr>
+   <td>
+     <div class='tbVersion'>ValueVersion</div>
+   </td> 
+   </tr><tr class='tbBottom'></tr> 
+  </table>
+</div>
+
+<div class="List_items">
+<!--
+    <table class='tbList' id='tbList' onclick='alert()' border=0> <tr><td rowspan='2' class='tbImage'><img class='tbImage' src='a.png'></td> <td><div><div class='tbTitle'>Name App</div></div></td> <td rowspan='2' class='EndText'><div class='tbmenu'>...</div></td></tr><tr><td><div class='tbVersion'>ValueVersion</div></td> </tr><tr class='tbBottom'></tr> </table>
+-->    
+</div>
+
+
+<script>
+//720x1280 
+var QueryString=GetQueryString();
+if(!QueryString.pid)QueryString.pid=0;
+
+if(window.JSInterface)
+{
+    window.alert=window.JSInterface.Alert;
+}
+ 
+
+GetListApp();
+var run_GetListApp=false;
+function GetListApp()
+{
+    
+    var urlGet=urlsite_ag+"/wservice/default.aspx?Action=Cats&type=Advertising&pid="+QueryString.pid+"&showimages=2";
+    var jdata=[];
+    LoadGetJson(urlGet,function(val,dEnd){
+        jdata=val;  
+        var row_sample=$(".SampleTB").html();
+        var rows="";   
+        for(var i=0;i<jdata.items.length;i++){
+            var a_row=row_sample
+            .replace("img/tk_logodf1.png",jdata.items[i].icon)
+            .replace("Name App",jdata.items[i].name)
+            .replace("ValueVersion","")
+            .replace("codelink",jdata.items[i].id)
+            .replace("codelink",jdata.items[i].id)
+            .replace("codelink",jdata.items[i].id); 
+            rows=rows+a_row;
+        } 
+        $(".List_items").append(rows);
+
+        run_GetListApp=false;
+    });
+}
+
+function tbOpen_onclick(id)
+{
+    curl("ag_list_products.html#pid="+id);
+}
+  
+</script>
+<div class='item_row'>
+
+</div>
+</body>
+
+</html>
